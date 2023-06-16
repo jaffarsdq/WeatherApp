@@ -1,7 +1,6 @@
 const apikey = "8246328328cd4dd51322791d82ac7106";
 
 const weatherDataEl = document.getElementById("weather-data");
-console.log(weatherDataEl) 
 
 const cityInputEl = document.getElementById("city-input");
 
@@ -51,7 +50,7 @@ async function getWeatherData(cityValue) {
 
         weatherDataEl.querySelector(".temperature").textContent = ``;
 
-        weatherDataEl.querySelector(".description").textContent = "An error happened, please try again later";
+        weatherDataEl.querySelector(".description").textContent = "An error happened, please try again later (or) check your spelling";
         
         weatherDataEl.querySelector(".details").innerHTML = "";
     }
